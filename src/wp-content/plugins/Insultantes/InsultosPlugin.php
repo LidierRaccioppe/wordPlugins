@@ -31,7 +31,6 @@ dbDelta( $sql );
 
 // Ahora insertar 5 palabras insultantes y si ya esta insertado no lo vuelve a inserta
 
-/*
     $wpdb->insert(
         $table_name,
         array(
@@ -61,8 +60,7 @@ dbDelta( $sql );
         array(
             'insulto' => 'pelotudazo',
             'palabra' => 'mentalemente deficiente'
-        ));ç
-*/
+        ));
 // Hacer un select entero de la tabla insultos y que devuelve los insultos
 $insultos = $wpdb->get_results("SELECT * FROM $table_name");
 // por cada palabra insultante hacer un str_replace
